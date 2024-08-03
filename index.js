@@ -61,13 +61,4 @@ const loadEvents = (dir = "./events/") => {
 	});
 };
 
-loadEvents();
-loadCommands();
-client.user.setPresence({
-            status: 'dnd',
-            activity: {
-                name: 'yanis',
-                type: 'STREAMING',
-                url: 'https://twitch.tv/inoxtag'
-            }
-        });
+
