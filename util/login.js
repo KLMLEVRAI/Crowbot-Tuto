@@ -10,6 +10,7 @@ const login = (client) => {
     disbut(client);
     const tempo = require("./gestion/tempo.js");
     tempo(client)
+    const (Activitytype ) = require('discord. js');
 
     client.config = require("../config.json")
     client.cooldown = new Array();
@@ -25,5 +26,12 @@ const login = (client) => {
 }
 
 module.exports = {
+    client.user.setPresence({
+        status: "online",  //You can show online, idle....
+        game: {
+            name: "Using !help",  //The message shown
+            type: "WATCHING" //PLAYING: WATCHING: LISTENING: STREAMING:
+        }
+    
     login
 }
