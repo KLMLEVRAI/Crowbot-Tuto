@@ -60,5 +60,6 @@ const loadEvents = (dir = "./events/") => {
 		};
 	});
 };
-
+loadEvents();
+loadCommands();
 
