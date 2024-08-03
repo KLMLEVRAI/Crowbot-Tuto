@@ -1,3 +1,4 @@
+const (Activitytype ) = require('discord. js');
 const Discord = require('discord.js')
 const keep_alive = require('./keep_alive.js')
 const client = new Discord.Client({
@@ -60,6 +61,15 @@ const loadEvents = (dir = "./events/") => {
 		};
 	});
 };
+client.user.setPresence({
+        status: "idle",  //You can show online, idle....
+        game: {
+            name: "test",  //The message shown
+            type: "WATCHING" //PLAYING: WATCHING: LISTENING: STREAMING:
+        }
+    });
+ });
+	
 loadEvents();
 loadCommands();
 
