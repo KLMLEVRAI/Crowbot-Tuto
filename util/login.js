@@ -10,7 +10,6 @@ const login = (client) => {
     disbut(client);
     const tempo = require("./gestion/tempo.js");
     tempo(client)
-    
 
     client.config = require("../config.json")
     client.cooldown = new Array();
