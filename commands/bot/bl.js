@@ -9,7 +9,7 @@ const {
 
 
 module.exports = {
-    name: 'blacklist',
+    name: 'bl',
     aliases: ["bl"],
     run: async (client, message, args, prefix, color) => {
 
